@@ -8,16 +8,23 @@ How to run
 
 Tests
 1) Incorrect file
-   2) java FlowLogProcessor ../input/flow_data.txt ../input/lookup1.txt
-   3) java FlowLogProcessor ../input/flow_data1.txt ../input/lookup1.txt
-2) Empty file
-   3) java FlowLogProcessor ../input/flow_data_no_data.txt ../input/lookup.txt
-3) Positive test
-   4) java FlowLogProcessor ../input/flow_data_large_file.txt ../input/lookup.txt
-4) Duplicate flow records
-   5) java FlowLogProcessor ../input/flow_data_same_record.txt ../input/lookup.txt
-5) Large flow file
-   6) java FlowLogProcessor ../input/flow_data_large_file.txt ../input/lookup.txt
+   
+   java FlowLogProcessor ../input/flow_data.txt ../input/lookup1.txt
+      
+   java FlowLogProcessor ../input/flow_data1.txt ../input/lookup1.txt
+      
+3) Empty file
+   
+   java FlowLogProcessor ../input/flow_data_no_data.txt ../input/lookup.txt
+5) Positive test
+6) 
+   java FlowLogProcessor ../input/flow_data_large_file.txt ../input/lookup.txt
+7) Duplicate flow records
+   
+   java FlowLogProcessor ../input/flow_data_same_record.txt ../input/lookup.txt
+9) Large flow file
+    
+   java FlowLogProcessor ../input/flow_data_large_file.txt ../input/lookup.txt
 
 
 Assumptions
