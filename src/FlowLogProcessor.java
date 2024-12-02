@@ -24,7 +24,6 @@ public class FlowLogProcessor {
 
         } catch  (Exception e) {
             System.out.println(e.getMessage());
-            e.printStackTrace();
             System.exit(-1);
         }
     }
@@ -103,7 +102,7 @@ public class FlowLogProcessor {
         for(Map.Entry<String, Integer> entry: flowDataMap.entrySet()) {
 
             if (lookDataMap.containsKey(entry.getKey())) {
-                String tagkey = lookDataMap.get(entry.getKey());
+                String tagkey = lookDataMap.get(entry.getKey()).toLowerCase();
                 if (tagCounter.containsKey(tagkey)) {
                     tagCounter.put(tagkey, tagCounter.get(tagkey) + entry.getValue());
                 } else {
