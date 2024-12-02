@@ -9,6 +9,10 @@ public class FlowLogProcessor {
     public static final String lookupDataFileName = "./src/lookup.txt";
 
     public static void main(String[] args) {
+        if (args.length != 2) {
+            System.out.println("Please pass location of flow data file and lookup data file as input");
+            System.exit(-1);
+        }
         FlowLogProcessor obj = new FlowLogProcessor();
         try {
             Map<String, Integer> flowDataMap = new HashMap<>();
